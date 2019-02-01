@@ -1,0 +1,24 @@
+// Color Palette
+$green-cyan: #50e3c2;
+$twilight-blue: #063974;
+$black: #2c2c2c;
+$light-blue: #d2f9f1;
+$spruce: #0c5f4c;
+$ice: #fafffe;
+
+// Font Book
+@mixin beachstay($font-size) {
+  font-family: 'PlayfairDisplaySC';
+  color: $black;
+  font-style: italic;
+  font-size: $font-size;
+}
+
+@mixin headings($font-size,$letter-spacing) {
+  font-family: 'Lato';
+  font-weight: bold;
+  line-height: 58px;
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+}
+
