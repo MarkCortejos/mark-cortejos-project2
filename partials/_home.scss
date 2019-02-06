@@ -101,7 +101,7 @@
           transition: transform .1s;
         }
   
-        &:hover::after {
+        &:hover::after, &:focus::after {
           transform: scaleX(1);
         }
         

@@ -131,7 +131,7 @@ ul {
   padding: 10px;
   transition: all .1s;
 
-  &:hover {
+  &:hover, &:focus {
     color: $twilight-blue;
     background-color: transparent;
   }
