@@ -1,0 +1,48 @@
+.form-layout {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-around;
+
+  form {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  input {
+    border: none;
+    padding: .75rem;
+  }
+
+  input[type="text"], input[type="email"] {
+    display: inline-block;
+    width: 47.5%;
+    border-bottom: 2px solid $green-cyan;
+    margin-bottom: 1rem;
+  }
+  
+  input[type="text"]::placeholder, input[type="email"]::placeholder {
+    font-weight: lighter;
+  }
+  
+  textarea {
+    display: block;
+    width: 100%;
+    border: 2px solid $green-cyan;
+    margin-bottom: 20px;
+    resize: none;
+    padding: 15px;
+  }
+
+  textarea::placeholder {
+    font-weight: lighter;
+  }
+
+  .button {
+    width: 100%;
+    border: none;
+  }
+}

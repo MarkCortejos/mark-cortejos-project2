@@ -13,98 +13,130 @@
 
 <body>
   <!-- Skip Link -->
-  <a href="#main-content" class="skip-link">Skip to main content.</a>
+  <a href="#home-main" class="skip-link">Skip to main content.</a>
   
-  <header class="bkg-img banner">
-    <nav>
-      <p class="logo">Beachstays</p>
+  <header id="home-header">
+    <div class="wrapper">
+      <nav>
+        <p class="logo">Beachstays</p>
+        
+        <ul class="lrg-menu flex-container">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    
-    <div>
-      <h3>welcome to</h3>  
-      <h1 class="logo">Beachstays</h1>
-    </div>
+        <p class="hamburger"><i class="fas fa-bars"></i></p>
+        <div class="drop-menu">
+          <ul class="menu flex-container">
+            <li class="exit-responsive"><i class="fas fa-times"></i></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div><!-- .wrapper ends -->
+      
+      <div class="title">
+        <h3>welcome to</h3>  
+        <h1 class="logo">Beachstays</h1>
+      </div>
+      <div class="header-box"></div>
   </header>
 
-  <div class="bkg-img responsive-lrg"></div>
 
-  <main id="#main-content">
-    <section class="visit flex-container wrapper">
-      <div class="text-box">
-        <h4>Visit Guyana</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quam eum porro deleniti beatae eos amet, et harum, nemo delectus, inventore ipsam? Libero ab harum mollitia, repellendus ex, tempore laboriosam neque quod ipsa beatae quo. Adipisci quo id, deleniti tempora sint qui aliquid illum eligendi perspiciatis pariatur ad impedit earum eum numquam aliquam quas.</p>
-        <a href="" class="button">Find out more</a>
-      </div>
-
-      <img src="" alt="">
-    </section>
-
-    <section class="gallery flex-container wrapper">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-    </section>
-
-    <section class="links flex-container wrapper">
-      <a href="" class="link">
-        <h6>Beach houses</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iure officiis, aspernatur maxime expedita possimus enim error quam corrupti ullam voluptas? Dicta similique maiores quo.</p>
-      </a>
-
-      <a href="" class="link">
-        <h6>Community</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iure officiis, aspernatur maxime expedita possimus enim error quam corrupti ullam voluptas? Dicta similique maiores quo.</p>
-      </a>
-
-      <a href="" class="link">
-        <h6>Blog</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iure officiis, aspernatur maxime expedita possimus enim error quam corrupti ullam voluptas? Dicta similique maiores quo.</p>
-      </a>
-
-      <a href="" class="link">
-        <h6>Get in Touch</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iure officiis, aspernatur maxime expedita possimus enim error quam corrupti ullam voluptas? Dicta similique maiores quo.</p>
-      </a>
-    </section>
-    
-    <section class="locations-planning flex-container">
-        <div class="flex-container">
-          <img src="" alt="">
-
-          <div class="text-box">
-            <h5>New locations</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi sed aperiam quod aliquam voluptatem vitae accusamus odio ducimus aspernatur, commodi amet! Dolores quas maxime perferendis asperiores!</p>
-            <a href="" class="button">Read More</a>
-          </div>
+  <main id="home-main">
+    <section class="visit">
+      <div class="wrapper flex-container">
+        <div class="text-box">
+          <h4>Visit Guyana</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quam eum porro deleniti beatae eos amet, et harum, nemo delectus, inventore ipsam? Libero ab harum mollitia, repellendus ex, tempore laboriosam neque quod ipsa beatae quo. Adipisci quo id, deleniti tempora sint qui aliquid illum eligendi perspiciatis pariatur ad impedit earum eum numquam aliquam quas.</p>
+          <a href="" class="button">Find out more</a>
         </div>
+        
+        <img class="shadow-left" src="assets/small-box.jpg" alt="View from a living room looking out a large window towards a large body of water.">
+      </div> <!-- .wrapper ends -->
+    </section>
+      
+      <section class="gallery">
+        <div class="wrapper flex-container">
+          <div class="image">
+            <img src="assets/gallery-image1.jpg" alt="A beautiful beach house by the water, surrounded by trees.">
+          </div>
+        
+          <div class="image">
+            <img src="assets/gallery-image2.jpg" alt="A walkway leading to a cozy beach house, surrounded by trees and vegetation.">
+          </div>
+          
+          <div class="image">
+            <img src="assets/gallery-image3.jpg" alt="A beach house surrounded by trees and vegetation, with sand in the foreground.">
+          </div>
+        </div><!-- .wrapper ends -->
+      </section>
+      
+      <section class="links">
+        <div class="wrapper flex-container">
+          <a href="" class="link">
+            <h6 class="house">Beach houses</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iure officiis, aspernatur maxime expedita possimus enim error quam corrupti ullam voluptas? Dicta similique maiores quo.</p>
+          </a>
+          
+          <a href="" class="link">
+            <h6 class="community">Community</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iure officiis, aspernatur maxime expedita possimus enim error quam corrupti ullam voluptas? Dicta similique maiores quo.</p>
+          </a>
+          
+          <a href="" class="link">
+            <h6 class="blog">Blog</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iure officiis, aspernatur maxime expedita possimus enim error quam corrupti ullam voluptas? Dicta similique maiores quo.</p>
+          </a>
+          
+          <a href="" class="link">
+            <h6 class="contact">Get in Touch</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iure officiis, aspernatur maxime expedita possimus enim error quam corrupti ullam voluptas? Dicta similique maiores quo.</p>
+          </a>
+        </div><!-- .wrapper ends -->
+      </section>
 
-        <div class="flex-container">
-          <img src="" alt="">
-
-          <div class="text-box">
+    <section class="planning-locations">
+        <div class="top flex-container">
+          <div class="left-image image shadow-right">
+            <img src="assets/left-image.jpg" alt="View of a beach house from the ground, looking upwards towards a blue sky.">
+          </div>
+          
+          <div class="left-align-box text-box">
             <h5>Plan ahead</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi sed aperiam quod aliquam voluptatem vitae accusamus odio ducimus aspernatur, commodi amet! Dolores quas maxime perferendis asperiores!</p>
             <a href="" class="button">Read More</a>
           </div>
         </div>
-
+        
+        <div class="bottom flex-container">
+          <div class="right-image image shadow-left">
+            <img src="assets/right-image.jpg" alt="A secret beach, sheltered by cliffs, with bright blue water.">
+          </div>
+          
+          <div class="right-align-box text-box">
+            <h5>New locations</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi sed aperiam quod aliquam voluptatem vitae accusamus odio ducimus aspernatur, commodi amet! Dolores quas maxime perferendis asperiores!</p>
+            <a href="" class="button">Read More</a>
+          </div>
+        </div>
+          
+      </div><!-- .flex-container ends -->
     </section>
     
     <section class="free-trip">
-      <div class="bkg-img banner"></div>
-
-      <div>
+      <div class="banner"></div>
+      
+      <div class="wrapper"> 
         <h5>Free trip with Beachstays</h5>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quisquam, nulla molestias repellendus, ullam sapiente laborum totam dicta tempore qui aut consequatur officiis quasi eius quod aperiam obcaecati illo sunt quas dolorem nam enim deleniti sed! Maxime ipsam sunt, temporibus aut quas eveniet nisi praesentium quam repudiandae commodi numquam, cupiditate, enim molestias.</p>
         <a href="" class="button">Find out more</a>
-      </div>
+      </div><!-- .wrapper ends -->
     </section>
   </main>
 
@@ -112,5 +144,21 @@
     <p>Copyright &#169 2019 HackerYou</p>
   </footer>
 
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script>
+    $(function () {
+      // Show responsive drop menu in hamburger mode 
+      $('.hamburger').on('click', function () {
+        $('.drop-menu').slideToggle();
+      })
+
+      // Hide responsive drop menu
+      $('.exit-responsive').on('click', function () {
+        $('.drop-menu').slideToggle();
+      })
+    })
+  </script>
 </body>
 </html>

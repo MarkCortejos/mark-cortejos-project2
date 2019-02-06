@@ -6,19 +6,150 @@ $light-blue: #d2f9f1;
 $spruce: #0c5f4c;
 $ice: #fafffe;
 
-// Font Book
-@mixin beachstay($font-size) {
-  font-family: 'PlayfairDisplaySC';
-  color: $black;
+// Font Mixins
+@mixin logo($font-size, $color) {
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 900;
   font-style: italic;
   font-size: $font-size;
+  color: $color;
 }
 
-@mixin headings($font-size,$letter-spacing) {
-  font-family: 'Lato';
+@mixin headings($font-size, $letter-spacing) {
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
   line-height: 58px;
   font-size: $font-size;
   letter-spacing: $letter-spacing;
 }
 
+// Box-shadow
+@mixin box-shadow($boolean) {
+  @if $boolean == 'left' {
+    box-shadow: -1rem 1.25rem $green-cyan;
+  } @else {
+    box-shadow: 1rem 1.25rem $green-cyan;
+  }
+}
+
+// Global styles
+html {
+  font-size: 125%;
+}
+
+body {
+  background-color: $ice;
+  font-size: .9rem;
+}
+
+body p {
+  font-family: 'Lato', sans-serif;
+  color: $black;
+  line-height: 1.4rem;
+  letter-spacing: 2px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  font-size: .9rem;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+header {
+  flex-direction: column;
+  min-height: 500px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  width: 100%;
+  padding: 50px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+h3, h4, h5, h6 {
+  color: $spruce;
+}
+
+h1.logo {
+  @include logo(4.7rem, $twilight-blue);
+}
+
+h2 {
+  @include headings(4.2rem, 9px);
+  color: $ice;
+}
+
+h3 {
+  @include headings(2.7rem, 6.7px);
+}
+
+h4, h5 {
+  @include headings(1.5rem, 3.8px);
+}
+
+h6 {
+  @include headings(1.2rem, 3.2px);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.button {
+  @include logo(.8rem, $ice);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: $twilight-blue;
+  padding: 10px;
+  transition: all .1s;
+
+  &:hover {
+    color: $twilight-blue;
+    background-color: transparent;
+  }
+}
+
+.shadow-left {
+  @include box-shadow('left')
+}
+
+.shadow-right {
+  @include box-shadow('right')
+}
+
+.drop-menu {
+  i {
+    font-size: 2rem;
+    color: $green-cyan;
+    position: fixed;
+    right: 2rem;
+  }
+}

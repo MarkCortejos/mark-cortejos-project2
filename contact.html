@@ -13,67 +13,104 @@
 
 <body>
   <!-- Skip Link -->
-  <a href="#main-content" class="skip-link">Skip to main content.</a>
+  <a href="#contact-main" class="skip-link">Skip to main content.</a>
 
-  <header class="bkg-img banner">
-    <nav>
-      <p class="logo">Beachstays</p>
-  
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-  
-    </nav>
-  
-    <h2>Get in Touch</h2>
+  <header id="contact-header">
+    <div class="wrapper">
+      <nav>
+        <p class="logo">Beachstays</p>
+        
+        <ul class="lrg-menu flex-container">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <p class="hamburger"><i class="fas fa-bars"></i></p>
+        <div class="drop-menu">
+          <ul class="menu flex-container">
+            <li class="exit-responsive"><i class="fas fa-times"></i></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+      </nav>
+      
+      
+      <h2>Get in Touch</h2>
+    </div>
   </header>
 
-  <main id="#main-content">
-    <div class="email-form">
-      <form action="POST">
-        <input type="text">
-        <input type="email">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button>Submit</button>
-      </form>
-    </div>
-  </main>
-
-  <aside>
-    <ul class="social">
-      <li>
-        <a aria-label="Connect on Facebook" href="">
-          <i aria-hidden class="fab fa-facebook-f"></i></a></li>
+  <main id="contact-main">
+    <div class="wrapper flex-container">
+      <section class="contact-form">
+        <div class="form-layout shadow-right">
+          <form action="#" class="flex-container">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email address">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <button class="button">Submit</button>
+          </form>
+        </div>
+      </section>
       
-      <li>
-        <a aria-label="Connect on Instagram" href="">
-          <i aria-hidden class="fab fa-instagram"></i></a></li>
-      
-      <li>
-        <a aria-label="Connect on Twitter" href="">
-          <i aria-hidden class="fab fa-twitter"></i></a></li>
-
-      <li>
-        <a aria-label="Connect on WhatsApp" href="">
-          <i aria-hidden class="fab fa-whatsapp"></i></a></li>
-    </ul>
-    
-    <a href="mailto:info@email.com">info@email.com</a>
-    
-    <div class="address">
-      <a href="tel:123-456-7890">123-456-7890</a>
-      <p>123 Queen Street West,</p>
-      <p>Unit 10</p>
-      <p>Toronto, Ontario</p>
-      <p>M5V 2D5</p>
-    </div>
-  </aside>
-
+      <aside class="contact-aside flex-container">
+        <ul class="social flex-container">
+          <li>
+            <a aria-label="Connect on Facebook" href="">
+              <i aria-hidden class="fab fa-facebook-f"></i></a></li>
+              
+          <li>
+            <a aria-label="Connect on Instagram" href="">
+              <i aria-hidden class="fab fa-instagram"></i></a></li>
+                  
+          <li>
+            <a aria-label="Connect on Twitter" href="">
+              <i aria-hidden class="fab fa-twitter"></i></a></li>
+                      
+          <li>
+            <a aria-label="Connect on WhatsApp" href="">
+              <i aria-hidden class="fab fa-whatsapp"></i></a></li>
+            </ul>
+              
+          <div class="email">
+            <a href="mailto:info@email.com">info@email.com</a>
+          </div>
+                        
+          <div class="address">
+            <p>123-456-7890</p>
+            <p>123 Queen Street West,</p>
+            <p>Unit 10</p>
+            <p>Toronto, Ontario</p>
+            <p>M5V 2D5</p>
+          </div>
+        </aside>
+      </div>
+    </main>
+                    
   <footer>
     <p>Copyright &#169 2019 HackerYou</p>
   </footer>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script>
+    $(function () {
+      // Show responsive drop menu in hamburger mode 
+      $('.hamburger').on('click', function () {
+        $('.drop-menu').slideToggle();
+      })
+
+      // Hide responsive drop menu
+      $('.exit-responsive').on('click', function () {
+        $('.drop-menu').slideToggle();
+      })
+    })
+  </script>
 </body>
 </html>

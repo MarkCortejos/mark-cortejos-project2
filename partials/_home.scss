@@ -1,0 +1,225 @@
+#home-header {
+  background-image: url(assets/home-image-1.jpg);
+
+  nav {
+    a[href="index.html"] {
+      color: $green-cyan;
+      &::after {
+        background-color: transparent;
+      }
+    }
+  }
+  
+  .title {
+    position: relative;
+    margin-top: 12rem;
+    padding-left: 30%;
+    z-index: 10;
+  
+    h3 {
+      position: relative;
+      bottom: -25px;
+    }
+  }
+
+  .header-box{
+    height: 40vw;
+    width: 40vw;
+    min-height: 300px;
+    min-width: 300px;
+    background-image: url(assets/header-box.jpg);
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    background-repeat: no-repeat;
+  }
+}// =====================================HOME-HEADER ENDS=====================================
+
+#home-main {
+  p {
+    margin-bottom: 1.5rem;
+  }
+  // ==========Visit Section==========
+  .visit {
+    padding-top: 100px;
+    
+    .flex-container {
+      justify-content: space-between;
+
+      .text-box {
+        width: 62.5%;
+      }
+  
+      img {
+        flex-basis: 295px;
+      }
+    }
+  }
+
+  // ==========Gallery Section==========
+  .gallery {
+    background-color: $light-blue;
+
+    .flex-container {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      .image {
+        width: 31%;
+        padding: 5px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  } 
+
+  // ==========Links Section==========
+  .links {
+    
+    .flex-container {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      
+      p {
+        margin-bottom: 1rem;
+      }
+
+      a.link:after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: $spruce;
+        display: block;
+        transform: scaleX(0);
+        transition: transform .1s;
+      }
+
+      a.link:hover:after {
+        transform: scaleX(1);
+      }
+
+      .link {
+        width: 40%;
+        
+        h6 {
+          position: relative;
+
+          &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: '\f111'; // circle
+            font-size: 2rem;
+            position: absolute;
+            left: -50px;
+          }
+
+          &::after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            color: $ice;
+          }
+        }
+
+        h6.house {
+          &::after {
+            content: '\f015'; // house
+            left: -43.5px;
+          }
+        }
+        
+        h6.community {
+          &::after {
+            content: '\f0c0'; // users
+            left: -45px;
+          }
+        }
+
+        h6.blog {
+          &::after {
+            content: '\f15b'; // file
+            left: -38.5px;
+          }
+        }
+
+        h6.contact {
+          &::after {
+            content: '\f095'; // phone
+            left: -41.5px;
+          }
+        }
+      }
+    }
+  }
+
+  // ==========Planning and Locations Section==========
+  .planning-locations {
+    background-color: $light-blue;
+    padding: 0;
+
+    .top, .bottom {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      h5 {
+        color: $twilight-blue;
+      }
+
+      p {
+        margin-top: 0;
+      }
+
+      .image, .text-box {
+        margin-bottom: 20px;
+        width: 42.5%;
+      }
+
+      .image {
+        position: relative;
+      }
+      
+      .left-image {
+        top: -25px;
+      }
+
+      .right-image {
+        order: 10;
+        bottom: -25px;
+      }
+
+      .left-align-box {
+        padding-right: 1rem;
+      }
+
+      .right-align-box {
+        text-align: right;
+        padding-left: 1rem;
+      }
+    }
+  }
+
+  // ==========Free Trip Section==========
+  .free-trip {
+    width: 100%;
+    padding-top: 0;
+
+    .banner {
+      background-image: url(assets/banner-image.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 60vh;
+    }
+
+    .wrapper {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+  }
+} // =====================================HOME-MAIN ENDS=====================================

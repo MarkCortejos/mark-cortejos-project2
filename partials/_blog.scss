@@ -1,0 +1,163 @@
+#blog-header {
+  background-image: url(assets/blog-image-1.jpg);
+
+  nav {
+    a[href="blog.html"] {
+      color: $green-cyan;
+      &::after {
+        background-color: transparent;
+      }
+    }
+  }
+
+  h2 {
+    margin-top: 15rem;
+  }
+
+} // =====================================BLOG-HEADER ENDS=====================================
+
+#blog-main {
+  justify-content: space-between;
+
+  article {
+    width: 60%;
+
+    .blog-content {
+      padding-top: 30vw;
+      border-right: 2px solid $green-cyan;
+      border-bottom: 2px solid $green-cyan;
+      position: relative;
+
+      img {
+        width: calc(100% - .9rem);
+        position: absolute;
+        top: -7rem;
+        left: 0;
+      }
+      
+      .text-box {
+        width: 100%;
+        
+        .date-author {
+          margin: 0;
+          font-style: italic;
+          
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+    } // =====================================BLOG-CONTENT ENDS=====================================
+
+    .blog-comments {
+      
+      h5 {
+        width: 100%;
+        color: $black;
+        margin: 1rem 0;
+      }
+
+      .post {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .image {
+          width: 12.5%;
+          padding-top: 10px;
+          
+          img {
+            width: 100%;
+          }
+        }
+
+        .post-text {
+          width: 82.5%;
+
+          .post-title {
+            font-weight: bold;
+            margin: 0;
+
+            + p {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+
+      .form-layout {
+        input, textarea {
+          background-color: $ice;
+        }
+      }
+    } // =====================================BLOG-COMMENTS ENDS=====================================
+  } // =====================================ARTICLE ENDS=====================================
+
+  #blog-aside {
+    width: 27.5%;
+    
+    .flex-container {
+      width: 100%;
+      flex-direction: column;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+      background-color: #fff;
+      position: relative;
+      bottom: -8rem;
+
+      a {
+        color: $black;
+        font-style: italic;
+        transition: all .1s;
+
+        &:hover {
+          color: $green-cyan;
+        }
+      }
+
+      img {
+        width: 100%;
+        position: relative;
+        top: -1rem;
+      }
+      
+      h6 {
+        color: $twilight-blue;
+      }
+      
+      .mission, .recent-posts {
+        padding-right: 1rem;
+      }
+
+
+      .mission {
+        margin-bottom: 1rem;
+        
+        p {
+          margin: 0 0 .5rem;
+        }
+      }
+      
+      .recent-posts {
+        ul {
+          li {
+            margin: .5rem 0;
+            
+            // Colored bullet point solution taken and modified from StackOverflow answer:
+            // https://stackoverflow.com/a/13150561
+            &:before {
+              content: "\f111"; // circle
+              font-family: 'Font Awesome 5 Free';
+              font-weight: 900;
+              color: $green-cyan;
+              margin-right: .5rem;
+              font-size: .35rem;
+              position: relative;
+              top: -2.5px;
+            }
+          }
+        }
+      }
+    }
+  } // =====================================BLOG-ASIDE ENDS=====================================
+} // =====================================BLOG-MAIN ENDS=====================================

@@ -12,82 +12,136 @@
 </head>
 
 <body>
-  <!-- Skip Link -->
-  <a href="#main-content" class="skip-link">Skip to main content.</a>
+  <!-- SKIP LINK -->
+  <a href="#blog-main" class="skip-link">Skip to main content.</a>
 
-  <header class="bkg-img banner">
-    <nav>
-      <p class="logo">Beachstays</p>
-  
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <header id="blog-header">
+    <div class="wrapper">
+      <nav>
+        <p class="logo">Beachstays</p>
+        
+        <ul class="lrg-menu flex-container">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-    </nav>
-    
-    <h2>Blog</h2>
+        <p class="hamburger"><i class="fas fa-bars"></i></p>
+        <div class="drop-menu">
+          <ul class="menu flex-container">
+            <li class="exit-responsive"><i class="fas fa-times"></i></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+      </nav>
+      
+      <h2>Blog</h2>
+    </div> <!-- .WRAPPER ENDS -->
   </header>
 
-  <main id="#main-content">
+  <main id="blog-main" class="flex-container">
     <article>
-      <img src="" alt="">
-      <div class="content">
-        <h4>Five days of ocean seas</h4>
-        <p class="date-author">Monday January 21st, 2019 by <span>Bora</span></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, atque quisquam facere autem odit unde voluptatum nesciunt sed non ut eveniet qui veritatis deleniti in fugiat quo blanditiis nam! Laborum obcaecati eligendi quia, perferendis omnis voluptates?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo molestiae esse maiores. Accusamus facilis atque doloribus sunt? Exercitationem velit, ipsam quisquam tempore tempora omnis autem aliquid sit quo consequuntur excepturi iusto! Illo iusto neque sunt ullam, inventore nostrum at praesentium, quae dicta quasi minima illum eveniet provident?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, debitis at! Dolores aperiam neque itaque harum ullam accusamus dicta placeat officiis ex cupiditate laboriosam minima, voluptates provident tempore temporibus, iure doloribus molestiae blanditiis! Nam error neque autem ut. Architecto, dolores molestias iure distinctio consequuntur totam voluptas illo aspernatur dolore, atque labore facilis. Ad non ipsum nesciunt expedita dolores inventore aliquam necessitatibus, libero, illo quia ipsam itaque aperiam numquam eius ut id.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur architecto doloribus perferendis odio repudiandae facere harum, sapiente impedit qui quae corrupti possimus delectus.</p>
-      </div>
+      <div class="blog-content">
+        <div class="wrapper">
+
+          <img class="shadow-right" src="assets/post-image.jpg" alt="A walkway leading to a cozy beach house, surrounded by trees and plants.">
+          
+          <div class="text-box">
+            <h4>Five days of ocean seas</h4>
+            <p class="date-author">Monday January 21st, 2019 by <span>Bora</span></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, atque quisquam facere autem odit unde voluptatum nesciunt sed non ut eveniet qui veritatis deleniti in fugiat quo blanditiis nam! Laborum obcaecati eligendi quia, perferendis omnis voluptates?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo molestiae esse maiores. Accusamus facilis atque doloribus sunt? Exercitationem velit, ipsam quisquam tempore tempora omnis autem aliquid sit quo consequuntur excepturi iusto! Illo iusto neque sunt ullam, inventore nostrum at praesentium, quae dicta quasi minima illum eveniet provident?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, debitis at! Dolores aperiam neque itaque harum ullam accusamus dicta placeat officiis ex cupiditate laboriosam minima, voluptates provident tempore temporibus, iure doloribus molestiae blanditiis! Nam error neque autem ut. Architecto, dolores molestias iure distinctio consequuntur totam voluptas illo aspernatur dolore, atque labore facilis. Ad non ipsum nesciunt expedita dolores inventore aliquam necessitatibus, libero, illo quia ipsam itaque aperiam numquam eius ut id.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur architecto doloribus perferendis odio repudiandae facere harum, sapiente impedit qui quae corrupti possimus delectus.</p>
+          </div>
+        </div> <!-- .WRAPPER ENDS -->
+      </div> <!-- .BLOG-CONTENT ENDS -->
+      
+      <div class="blog-comments">
+        <div class="wrapper">
+          <h5>Comments:</h5>
+          
+          <div class="post flex-container">
+            <div class="image">
+              <img src="assets/comment-image.jpg" alt="">
+            </div>
+            <div class="post-text">
+              <p class="post-title">Tuesday October 9th, 2019 by Reyansh</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum dolores vitae ex incidunt sapiente vel cumque eos maxime nesciunt totam, beatae corporis nam esse, voluptatem perspiciatis necessitatibus harum veritatis praesentium mollitia! Aut?</p>
+            </div>
+          </div>
+          
+          <div class="post flex-container">
+            <div class="image">
+              <img src="assets/comment-image2.jpg" alt="">
+            </div>
+            <div class="post-text">
+              <p class="post-title">Wednesday October 10th, 2019 by Olivia</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dignissimos sed sapiente voluptate magni nulla neque laboriosam architecto.</p>
+            </div>
+          </div>
+        </div>  <!-- WRAPPER & FLEX-CONTAINER ENDS -->
+        
+        <div class="form-layout">
+          <form action="#" class="flex-container">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email address">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <button class="button">Post Comment</button>
+          </form>
+        </div>
+      </div> <!-- BLOG-COMMENTS ENDS -->
     </article>
     
-    <div class="comments">
-      <h5>Comments:</h5>
-      <div class="post">
-        <h6>Tuesday October 9th, 2019 by Reyansh</h6>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum dolores vitae ex incidunt sapiente vel cumque eos maxime nesciunt totam, beatae corporis nam esse, voluptatem perspiciatis necessitatibus harum veritatis praesentium mollitia! Aut?</p>
-      </div>
-
-      <div class="post">
-        <h6>Wednesday October 10th, 2019 by Olivia</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dignissimos sed sapiente voluptate magni nulla neque laboriosam architecto.</p>
-      </div>
-    </div>
-    
-    <div class="comment-form">
-      <form action="POST">
-        <input type="text">
-        <input type="email"> 
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button>Post Comment</button>
-      </form>
-    </div>
-    </main>
-
-    <aside>
-      <img src="" alt="">
-      <div>
-        <h6>Our mission</h6>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo inventore quasi dolorum.</p>
-        <a href="">Find out more</a>
-      </div>
-
-      <div>
-        <h6>Recent posts</h6>
-        <ul>
-          <li><a href="">Lorem ipsum dolor sit.</a></li>
-          <li><a href="">Lorem ipsum dolor sit.</a></li>
-          <li><a href="">Lorem ipsum dolor sit.</a></li>
-          <li><a href="">Lorem, ipsum dolor.</a></li>
-        </ul>
+    <aside id="blog-aside">
+      <div class="flex-container">
+        <img src="assets/sidebar-image.jpg" alt="A beautiful beach house by the water, surrounded by trees.">
+        
+        <div class="mission">
+          <h6>Our mission</h6>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo inventore quasi dolorum.</p>
+          <a href="">Find out more.</a>
+        </div>
+        
+        <div class="recent-posts">
+          <h6>Recent posts</h6>
+          <ul>
+            <li><a href="">Lorem ipsum dolor sit amet</a></li>
+            <li><a href="">Obcaecati quiaadipisicing</a></li>
+            <li><a href="">Quo perspiciatis libero</a></li>
+            <li><a href="">Doloribus consectetur</a></li>
+          </ul>
+        </div>
       </div>
     </aside>
+  </main>
 
-    <footer>
-      <p>Copyright &#169 2019 HackerYou</p>
-    </footer>
+
+  <footer>
+    <p>Copyright &#169 2019 HackerYou</p>
+  </footer>
+
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    $(function() {
+      // Show responsive drop menu in hamburger mode 
+      $('.hamburger').on('click', function () {
+        $('.drop-menu').slideToggle();
+      })
+
+      // Hide responsive drop menu
+      $('.exit-responsive').on('click', function () {
+        $('.drop-menu').slideToggle();
+      })
+    })
+  </script>
 </body>
 </html>
