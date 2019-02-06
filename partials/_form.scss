@@ -12,11 +12,7 @@
     justify-content: space-between;
   }
 
-  input {
-    border: none;
-    padding: .75rem;
-  }
-
+  
   input[type="text"], input[type="email"] {
     display: inline-block;
     width: 47.5%;
@@ -28,6 +24,16 @@
     font-weight: lighter;
   }
   
+  input {
+    border: none;
+    padding: .75rem;
+
+    &:focus {
+      border: 2px solid $twilight-blue;
+    }
+
+  }
+
   textarea {
     display: block;
     width: 100%;
@@ -35,6 +41,10 @@
     margin-bottom: 20px;
     resize: none;
     padding: 15px;
+
+    &:focus {
+      border: 2px solid $twilight-blue;
+    }
   }
 
   textarea::placeholder {
