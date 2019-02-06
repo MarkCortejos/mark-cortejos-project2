@@ -213,6 +213,10 @@
     font-size: 110%;
   }
 
+  .form-layout {
+    padding: 1.5rem;
+  }
+
     // =====HOME STYLING=====
   #home-main {
     .links {
@@ -297,6 +301,10 @@
 @media (max-width: 529px) {
   html {
     font-size: 100%;
+  }
+
+  .form-layout {
+    padding: 1rem;
   }
   
   .wrapper {
